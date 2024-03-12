@@ -6,7 +6,7 @@ function App() { // This is a functional component
   
 
   return (
-    <div>
+    <div id='appH'>
       <Gallery />
     </div> 
   )

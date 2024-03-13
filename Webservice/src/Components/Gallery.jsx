@@ -1,35 +1,11 @@
 import Photo from './Photo';
 
-const Gallery = () => {
-    const pics = [
-        {
-            id : 20,
-            Size : {
-                width : 100,
-                height : 100
-            }
-        },
-        {
-            id : 25,
-            Size : {
-                width : 100,
-                height :100
-            }
-        },
-        {
-            id : 30,
-            Size : {
-                width : 100,
-                height : 100
-            }
-        }
-    ];
-
+const Gallery = (props) => {
     return ( 
         <div> 
             <h1>Galerie de photos</h1>
-            <div id='photos'>
-                <Photo photos={pics} />
+            <div>  
+                <Photo photos={props.pics} />
             </div>
         </div>
     );

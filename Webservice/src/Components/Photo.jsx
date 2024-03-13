@@ -3,7 +3,8 @@ const Photo = (props) => {
         <div>
             {props.photos.map((photo) => (
                 <div key={photo.id}>
-                    <img src={`https://picsum.photos/id/${photo.id}/${photo.Size.width}/${photo.Size.height}`} alt="random" />
+                    <p>{photo.author}{`(#${photo.id})`}</p>
+                    <img src={`https://picsum.photos/id/${photo.id}/${photo.width}/${photo.height}`} alt="random" />
                 </div>
             ))}
         </div>

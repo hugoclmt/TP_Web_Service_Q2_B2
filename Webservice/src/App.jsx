@@ -1,13 +1,11 @@
 import './App.css'
 import Gallery from './Components/Gallery.jsx'
-
+import pics from './data.jsx'
 
 function App() { // This is a functional component
-  
-
   return (
     <div id='appH'>
-      <Gallery />
+      <Gallery pics={pics} />
     </div> 
   )
 }
